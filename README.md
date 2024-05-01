@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+This is my version of Pokemon's widely known Pokedex built using the React framework Next.js
