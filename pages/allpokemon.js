@@ -11,23 +11,36 @@ export const pokeGridImagesList = () => {
   const imageLinks = createImagesList();
   let images = []
   imageLinks.map(item => {
-    images.push({src: item, width: 300, height: 300})
+    images.push({
+      src: item, 
+      width: 'auto', 
+      height: 300,
+      customOverlay: (
+        <div style={{
+          border: '8px solid #152C44',
+          borderRadius: '25px',
+          height: 180
+        }}>
+
+        </div>
+      )
+    })
   });
 
   return images
 }
 
-//console.log(pokeGridImagesList())
+const pokePreview = () => {
 
+}
 
-const PokeGrid = () => {
-  
-  return (
-    <Gallery images={<pokeGridImagesList/>}/>
-    
-  );
-//  
-};
+const imageStyle = () => {
+  const style = {
+    backgroundColor: '#1c6591',
+  }
+  return style
+}
+
 
 export default function AllPage() {
     return (
@@ -53,7 +66,7 @@ export default function AllPage() {
 
       <main className={styles.main}>
         <div className={styles.IMGgrid}>
-          <Gallery images={pokeGridImagesList()}/>
+          <Gallery images={pokeGridImagesList()} enableImageSelection={false} tileViewportStyle={imageStyle()}/>
           
         </div>
         <div className={styles.pokePreview}>
