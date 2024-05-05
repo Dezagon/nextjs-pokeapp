@@ -31,7 +31,11 @@ export const pokeGridImagesList = () => {
 }
 
 const pokePreview = () => {
-
+  return (
+    <div className={styles.Preview}>
+      <h1></h1>
+    </div>
+  )
 }
 
 const imageStyle = () => {
@@ -70,8 +74,7 @@ export default function AllPage() {
           
         </div>
         <div className={styles.pokePreview}>
-          <div className={styles.circle}>
-          </div>
+          
         </div>
       </main>
 
