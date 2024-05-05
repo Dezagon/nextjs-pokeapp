@@ -58,7 +58,9 @@
 }
 
 .IMGgrid {
-  width: 90%;
-  position: absolute;
-  justify-content: center;
+  
+  width: 70%;
+  height: 90%;
+  padding-left: 5em;
+  overflow-y: auto;
 }

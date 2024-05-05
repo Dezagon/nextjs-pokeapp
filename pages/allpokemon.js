@@ -21,22 +21,6 @@ export const pokeGridImagesList = () => {
 
 
 const PokeGrid = () => {
-  /*
-  const [pokeImage, setImage] = useState({
-    src: '',
-    width: 300,
-    height: 300
-  });
-
-  
-  const handleSrcChange = (imageLink) => {
-    setImage({
-      ...pokeImage,
-      src: pokeImage.src = imageLink
-    });
-  };
-  */
-  
   
   return (
     <Gallery images={<pokeGridImagesList/>}/>
